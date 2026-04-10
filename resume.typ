@@ -2,34 +2,36 @@
 
 #set page(
   margin: (
-    left: 8mm,
-    right: 8mm,
-    top: 8mm,
-    bottom: 8mm
+    left: 6mm,
+    right: 6mm,
+    top: 6mm,
+    bottom: 6mm
   ),
 )
 
-#set text(font: "Mulish")
+// Reduce font size and line spacing slightly to save space
+#set text(font: "Mulish", size: 9.5pt)
+#set par(leading: 0.5em)
 
 #show: project.with(
   theme: rgb("#0F83C0"),
-  name: "Harnoor Singh",
+  name: "Aishwarya Shevkar",
   contact: (
     contact(
-      text: "LinkedIn://iharnoor",
-      link: "https://www.linkedin.com/in/iharnoor"
+      text: "LinkedIn://aish06",
+      link: "https://www.linkedin.com/in/aish06/"
     ),
     contact(
-      text: "Github://iharnoor",
-      link: "https://www.github.com/iharnoor"
+      text: "GitHub://ashevkar",
+      link: "https://github.com/ashevkar"
     ),
     contact(
-      text: "singhinusa.dev",
-      link: "https://singhinusa.dev"
+      text: "(872) 664-2261",
+      link: "tel:872-664-2261"
     ),
     contact(
-      text: "email@example.com",
-      link: "mailto:email@example.com"
+      text: "ashshevkar@gmail.com",
+      link: "mailto:ashshevkar@gmail.com"
     )
   ),
   main: (
@@ -37,53 +39,43 @@
       title: "Experience",
       content: (
         subSection(
-          title: "Microsoft Corp.",
-          titleEnd: "Atlanta, GA",
-          subTitle: "Software Engineer",
-          subTitleEnd: "(July 2022 – April 2025)",
-          content: [
-            *AI / Applied ML (Microsoft Security)*
-            #list(
-              [Architected and implemented *AI-driven query translation (NL2KQL)* using *Vector Databases and Retrieval-Augmented Generation (RAG)* pipelines, enabling natural-language security analytics over structured telemetry.],
-              [Owned the *end-to-end design, implementation, and validation* of AI-enhanced workflows, partnering with security engineers and PMs to ensure *correctness, scalability, and production readiness*.],
-              [Led experimentation and *prompt optimization strategies* to improve query accuracy and system reliability in production security environments.],
-              [*Technologies:* LLM-based APIs, RAG Pipelines, Vector Databases, NL2KQL, Security Analytics]
-            )
-            *Mobile Engineering / Platform (Microsoft Defender)*
-            #list(
-              [Led the design and development of *end-to-end native test frameworks* for Microsoft Defender *Android and iOS*, *doubling release velocity (2× faster)* while improving regression coverage and reliability.],
-              [Built and maintained *native mobile testing infrastructure*, enabling faster iteration cycles and reducing production regressions across multiple Defender releases.],
-              [Collaborated with cross-platform mobile teams to integrate testing pipelines into CI/CD workflows.],
-              [*Technologies:* Android, iOS, Native Testing Frameworks, Automated Testing, CI/CD]
-            )
-            *Cross-Functional / Developer Advocacy*
-            #list(
-              [Partnered with the *Microsoft Designer* team as a creative collaborator, contributing to *go-to-market strategy* and producing technical marketing content, for my YouTube channel Singh in USA (*1M+ subscribers*).]
-            )
-          ],
+          title: "Arizona State University",
+          titleEnd: "Tempe, AZ",
+          subTitle: "Software Developer",
+          subTitleEnd: "(Aug 2025 – Present)",
+          content: list(
+            [Architected and maintained a research collaboration web platform using *TypeScript, Node.js, and React*, supporting multi-role access for 100+ concurrent users, designed to streamline grant discovery.],
+            [Developed AI-driven search and recommendation features using *Pinecone vector database and custom embeddings*, enabling semantic search across thousands of research records.],
+            [Optimized API performance with *AWS Lambda and serverless architecture* across 5+ production services, implementing monitoring to maintain high reliability and scale.],
+            [Implemented automated CI/CD pipelines with *Vercel and AWS CloudFormation*, supporting frequent internal releases, reducing manual errors, and improving deployment efficiency.],
+            [Driven cross-functional collaboration across 3 teams including development, QA, and product, shaping platform direction and scaling AI-driven solutions.]
+          )
         ),
         subSection(
-          title: "NCR (National Cash Register)",
-          titleEnd: "Atlanta, GA",
-          subTitle: "Software Engineer",
-          subTitleEnd: "(July 2020 – July 2022)",
+          title: "Anikaay Integration",
+          titleEnd: "Pune, India",
+          subTitle: "Software Developer",
+          subTitleEnd: "(Mar 2022 – Jun 2023)",
           content: list(
-            [Contributed to NCR Silver POS Android application, working within a *1M+ LOC* codebase spanning *19 modules* and serving hundreds of thousands of global users.],
-            [Served as *Atlanta team lead and Scrum Master*, coordinating execution for *11 engineers and QA members*, driving sprint planning, delivery, and cross-team alignment.],
-            [Engineered production features using *Dagger2, RxJava, Kotlin Multiplatform, and C++*, including cross-platform shared libraries for business-critical workflows.],
-            [Designed and implemented instrumentation and unit testing frameworks using *Espresso, Mockito, and JUnit*, improving stability and reducing post-release defects.],
-            [Acted as a technical interviewer and campus recruiter, representing NCR at university engineering fairs and contributing to intern hiring pipelines.],
-            [*Technologies:* Android, Kotlin, RxJava, Dagger2, C++, Espresso, Mockito, JUnit]
-          ),
+            [Directed microservices migration for *2M users on AWS*, reducing load times by 40% and improving scalability and uptime.],
+            [Designed RESTful APIs using *Node.js and React*, increasing data throughput by 25% and achieving 95% customer satisfaction.],
+            [Implemented *Docker-based CI/CD pipelines*, cutting deployment time by 30% and improving release reliability across 10+ services.],
+            [Mentored 4 junior engineers, improving code quality and reducing production issues by 20%.],
+            [Led technical decisions to resolve legacy bottlenecks, ensuring scalable architecture and *99.9% system availability*.]
+          )
         ),
         subSection(
-          title: "Panasonic Automotive",
-          titleEnd: "Peachtree City, GA",
-          subTitle: "Systems Engineering Intern",
-          subTitleEnd: "(May 2017 – May 2018)",
+          title: "GlobalStep",
+          titleEnd: "Pune, India",
+          subTitle: "Software Developer",
+          subTitleEnd: "(Aug 2020 – Mar 2022)",
           content: list(
-            [Built an Android-based infotainment simulation app replicating Panasonic's in-car entertainment system, reducing developer onboarding and use-case understanding time by ~2×.]
-          ),
+            [Led full-stack development of a *React and Redux-based* customer portal, launching 4 major feature releases within the first year.],
+            [Integrated secure third-party RESTful APIs and payment gateways, enabling *1,000+ successful monthly transactions*.],
+            [Optimized *PostgreSQL* schemas and query logic, reducing data retrieval latency to under 200ms for high-traffic endpoints.],
+            [Implemented Git flow with Bitbucket, enabling seamless collaboration across 5 developers with zero major merge conflicts for 6 months.],
+            [Eliminated critical defects through *JUnit testing*, resolving 25+ bugs per sprint prior to user acceptance testing.]
+          )
         ),
       ),
     ),
@@ -91,18 +83,58 @@
       title: "Education",
       content: (
         subSection(
-          title: "Georgia State University",
-          titleEnd: "Atlanta, GA",
-          subTitle: "BS & MS in Computer Science",
-          subTitleEnd: "(2016 – 2020)",
-          content: [
-            *summa cum laude* | GPA: 4.0\
-            President's List, Honors College
-          ],
+          title: "Illinois Institute of Technology",
+          titleEnd: "Chicago, IL",
+          subTitle: "M.S. Information Technology",
+          subTitleEnd: "(May 2025)"
         ),
+        subSection(
+          title: "University of Pune",
+          titleEnd: "Pune, India",
+          subTitle: "B.E. Information Technology",
+          subTitleEnd: "(June 2020)"
+        )
       ),
+    ),
+    section(
+      title: "Projects",
+      content: (
+        subSection(
+          title: "Tracer Code Copilot",
+          content: list(
+            [Developed a backend system for *AI-powered code refactoring*, implementing secure API endpoints and efficient data processing pipelines.],
+            [Designed scalable architecture supporting concurrent users while maintaining *sub-100ms response times* for critical operations.]
+          )
+        ),
+        subSection(
+          title: "Ring Atelier",
+          content: list(
+            [Designed and delivered a secure, multi-method global payment system with credit/debit card support and third-party gateway fallback logic, improving checkout success and *reducing cart abandonment by 25%*.],
+            [Built real-time transaction monitoring and alerting with *Kafka and PostgreSQL*, cutting payment-related support tickets by 40% while strengthening fraud detection.]
+          )
+        )
+      )
+    ),
+    section(
+      title: "Skills & Certifications",
+      content: (
+        subSection(
+          title: "Technical Skills",
+          content: [
+            *Languages & Frontend:* Java, JavaScript, TypeScript, React, Next.js, Angular, Vue.js, Redux, HTML5, CSS3 \
+            *Backend & Databases:* Node.js, Express.js, Spring Boot, FastAPI, PostgreSQL, MySQL, MongoDB, Pinecone, Redis \
+            *Cloud, DevOps & Testing:* Azure, GCP, Docker, Kubernetes, AWS Lambda, CloudFormation, Jenkins, CI/CD, JUnit, Cypress \
+            *AI/ML & Concepts:* OpenAI API, LLMs, TensorFlow, Prompt Engineering, Distributed Systems, REST APIs
+          ]
+        ),
+        subSection(
+          title: "Certifications",
+          content: [
+            Hash Code 2022 • Kickstart 2021 • Oracle Cloud Foundations • Salesforce AI Associate • Salesforce AI Specialist • Google AI
+          ]
+        )
+      )
     )
   ),
   sidebar: (),
 )
-
